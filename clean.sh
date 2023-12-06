@@ -1,9 +1,9 @@
 echo "Cleaning Mac"
 echo "Please wait until it finishes..."
 
-echo "Cleaning cached data, xCode logs and simulators logs"
+echo "Cleaning xCode cached data and simulators logs"
 
-sudo rm -rf ~/Library/Developer/Xcode/DerivedData && sudo rm -rf ~/Library/Logs/CoreSimulator && sudo rm -rf ~/Library/Developer/Xcode/IOS DeviceSupport &&  sudo rm -rf ~/Library/Caches/com.apple.dt.Xcode && sudo rm -rf ~/Library/Caches
+sudo rm -rf ~/Library/Developer/Xcode/DerivedData && sudo rm -rf ~/Library/Logs/CoreSimulator/Caches && sudo rm -rf ~/Library/Developer/Xcode/IOS DeviceSupport && sudo rm -rf ~/Library/Logs/DiagnosticReports && sudo rm -rf ~/Library/Caches/com.apple.dt.Xcode && sudo rm -rf ~/Library/Caches && sudo rm -rf ~/Library/Developer/XCPGDevices
 
 echo "Cleaning process finished"
 
